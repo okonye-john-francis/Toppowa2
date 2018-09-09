@@ -12,5 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('homeDisplay');
+});
+
+Route::get('/problem', function () {
+    return view('problem');
+});
+
+Route::get('/solution', function () {
+    return view('solution');
+});
+
+Route::get('/team', function () {
+    return view('team');
 });
